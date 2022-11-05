@@ -21,10 +21,6 @@ Tag.belongsToMany(Product, {
   foreignKey: 'tag_id',
 });
 
-Product.hasMany(ProductTag);
-ProductTag.belongsTo(Product);
-ProductTag.belongsTo(Tag);
-
 module.exports = {
   Product,
   Category,
