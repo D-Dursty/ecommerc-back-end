@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
         through: ProductTag
       }]
     });
-    if (!products){
+    if (!product){
       return res.status(400).json({msg:"No matching product"})
     }
     res.status(200).json(product)
