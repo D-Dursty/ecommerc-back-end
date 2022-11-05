@@ -15,7 +15,7 @@ router.get('/', async(req, res) => {
     }]
   });
   if (!products) {
-    return res.status(400),json({msg:'No matching product'})
+    return res.status(400).json({msg:'No matching product'})
   }
   res.status(200).json(products)
   } catch(err) {
